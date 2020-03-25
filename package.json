@@ -1,15 +1,15 @@
 {
-  "name": "longtimeout",
+  "name": "long-settimeout",
   "version": "1.0.0",
   "description": "Long timeout makes it possible to have a timeout that is longer than 24.8 days (2^31-1 milliseconds).",
   "author": "Martin Litvaj <kamahl19@gmail.com> (http://litvaj.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kamahl19/longtimeout.git"
+    "url": "git+https://github.com/Kamahl19/long-settimeout.git"
   },
   "bugs": {
-    "url": "https://github.com/Kamahl19/longtimeout/issues"
+    "url": "https://github.com/Kamahl19/long-settimeout/issues"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,7 +17,14 @@
     "dist",
     "src"
   ],
-  "module": "dist/longtimeout.esm.js",
+  "keywords": [
+    "settimeout",
+    "timeout",
+    "timer",
+    "schedule",
+    "scheduler"
+  ],
+  "module": "dist/long-settimeout.esm.js",
   "engines": {
     "node": ">=10"
   },
