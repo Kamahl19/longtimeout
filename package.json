@@ -1,0 +1,61 @@
+{
+  "name": "longtimeout",
+  "version": "1.0.0",
+  "description": "Long timeout makes it possible to have a timeout that is longer than 24.8 days (2^31-1 milliseconds).",
+  "author": "Martin Litvaj <kamahl19@gmail.com> (http://litvaj.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamahl19/longtimeout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kamahl19/longtimeout/issues"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "module": "dist/longtimeout.esm.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "test:watch": "tsdx test --watch",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "husky": "^4.2.3",
+    "tsdx": "^0.13.0",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "settings": {
+      "react": {
+        "version": "999.999.999"
+      }
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
